@@ -102,8 +102,7 @@ void MST::ReadGraph(const std::string& fileName)
 	size_t numberOfNodes, numberOfEdges;
 	fin >> numberOfNodes >> numberOfEdges;
 
-	QPointF windowSize(1920, 1080);
-	QPointF center(windowSize.x() / 2, windowSize.y() / 2);
+	QPointF center(size().width() / 2, size().height() / 2);
 	qreal angle = 2 * M_PI / numberOfNodes;
 
 	for (size_t index = 0; index < numberOfNodes; ++index)
